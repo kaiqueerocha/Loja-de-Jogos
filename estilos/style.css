@@ -96,8 +96,8 @@ header h1 span{
 }
 .jogo{
     min-width: 0;
-    padding: 15px;
-    background-color: #1e293b;
+    padding: 0px;
+    background-color: #172033;
     box-sizing: border-box;
     border: #0284c7 1px solid;
     border-radius: 10px;
@@ -111,9 +111,10 @@ header h1 span{
 }
 .jogo img{
     width: 100%;
-    height: 350px;
+    height: 300px;
     object-fit: contain;
     margin-top: auto;
+    display: block;
 }
 
 .jogo:hover{
@@ -141,6 +142,7 @@ header h1 span{
 }
 
 .trending-game{
+    position: relative;
     border-radius: 10px;
     border: 1px solid #0285c727;
     flex: 0 0 180px;
@@ -174,4 +176,42 @@ header h1 span{
     padding: 10px 15px;
     font-size: 20px;
     cursor: pointer;
+}
+.trending-list::-webkit-scrollbar {
+    height: 22px;
+}
+.trending-list::-webkit-scrollbar-track {
+    background-color: #1e293b;
+    border-radius: 10px;
+}
+
+.info{
+    padding: 15px;
+}
+.info h3{
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.info p {
+    font-size: 14px;
+    color: #94a3b8;
+    line-height: 1.5;
+}
+.avaliacao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.nota {
+    color: #facc15;
+    font-weight: bold;
+}
+
+.categoria {
+    color: #38bdf8;
+    font-size: 13px;
 }
