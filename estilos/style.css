@@ -121,15 +121,17 @@ header h1 span{
 }
 .jogo img{
     width: 100%;
-    height: 450px;
-    object-fit: contain;
-    margin-top: 25px;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    object-position: center top;
     display: block;
+    border-radius: 9px 9px 0px 0px;
 }
 
 .jogo:hover{
     transform: translateY(-10px);
     box-shadow: 0 0 20px #0284c7;
+    border-color: #00d9ff;
 }
 
 #jogos h2 {
@@ -197,6 +199,9 @@ header h1 span{
 
 .info{
     padding: 15px;
+    display: flex;
+    flex-direction: column;
+    flex: 1
 }
 .info h3{
     font-size: 20px;
@@ -213,7 +218,7 @@ header h1 span{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
 .nota {
@@ -251,12 +256,29 @@ header h1 span{
     
 }
 .details{
-    display: block;
+    width: 120px;
+    display: inline-block;
     background-color: #0284c7;
     color: white;
     text-align: center;
     text-decoration: none;
-    padding: 12px;
+    padding: 8px;
     border-radius: 8px;
     margin-top: auto;
+    margin-bottom: 10px;
+    align-self: center;
+
+    transition: background-color 0.4s ease;
+}
+
+.details:hover{
+    background-color: #0369a1;
+}
+
+.preco{
+    font-size: 24px;
+    font-weight: bold;
+    color: #38bdf8;
+    margin-top: 5px;
+    margin-bottom: 15px;
 }
