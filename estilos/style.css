@@ -213,6 +213,7 @@ header h1 span{
     font-size: 14px;
     color: #94a3b8;
     line-height: 1.5;
+    min-height: 65px;
 }
 .avaliacao {
     display: flex;
@@ -281,4 +282,40 @@ header h1 span{
     color: #38bdf8;
     margin-top: 5px;
     margin-bottom: 15px;
+}
+
+.plataforma{
+    display: flex;
+    text-align: center;
+    gap: 12px;
+    margin: 0px 0px 8px;
+
+    
+}
+
+.plataforma i{
+    font-size: 20px;
+    color: white;
+    transition: 0.3s ease;
+}
+
+.plataforma i:hover{
+    color: #38bdf8;
+    transform: translateY(-5px);
+    cursor: pointer;
+
+}
+
+
+@media screen and (max-width: 900px) {
+    .lista-jogos {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .lista-jogos {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
